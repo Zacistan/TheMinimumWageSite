@@ -1,0 +1,23 @@
+# VSCode working folder
+.vscode
+
+# Virtual Environments
+env/
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# macOS
+.DS_Store
+
+# Test database 
+db.sqlite3
+
+# Django Migrations
+migrations/

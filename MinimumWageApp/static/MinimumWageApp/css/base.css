@@ -1,0 +1,59 @@
+body {
+  background-color: #f7f7f7
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder;
+  font-size: 6em;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.landing-page {
+  background-image: url("/static/MinimumWageApp/images/USA-states-glass.png");
+  text-align: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+}
+
+.landing-page form {
+  width: 80%;
+}
+
+.landing-page form button {
+  width: 40%;
+  margin-top: 5px;
+}
+
+@media (min-width:961px) {
+  .landing-page .container {
+    padding-top: 10em
+  }
+}
+
+.state-page {
+  text-align: center;
+  position: relative;
+}
+
+.vertical-center {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.errorlist {
+  font-family: 'Roboto', sans-serif;
+  color: red;
+  font-weight: bold;
+  list-style-type: none;
+}

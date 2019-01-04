@@ -1,0 +1,17 @@
+{% extends "MinimumWageApp/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container state-page">
+    <h2>{{state_data.state_name}}'s annual earnings for a full-time employee is</h2>
+    <h1>{{state_data.minwage_livingcost_difference}}</h1>
+    <h2>below the annual cost of living.</h2>
+    <h1>The Facts</h1>
+    <p>
+        {{state_data.state_name}}'s annual gross income for two adults is <b>{{state_data.annual_min_wage_for_two}}</b> 
+        based on the hourly minimum wage of <b>{{state_data.hourly_min_wage}}</b>.
+        <br/>
+        The average cost of living for two adults and a single child in {{state_data.state_name}} is <b>{{state_data.annual_family_living_wage}}</b>.
+    </p>
+</div>
+{% endblock %}
