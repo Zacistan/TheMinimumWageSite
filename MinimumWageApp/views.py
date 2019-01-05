@@ -25,7 +25,8 @@ def redirect_to_state(request):
                 # Exception is thrown if state is not found in database.
                 if not StateData.objects.filter(state_name=state.upper()):
                     raise Exception('State not found in database.')
-            except:
+            except Exception as e:
+                print('An exception was thrown: {0}'.format(e))
                 form.add_error(field='state_name', error="State name is invalid.")
                 return render(request, 'MinimumWageApp/index.html', {'state_search_form': form})
                 

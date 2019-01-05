@@ -18,5 +18,6 @@ def start_up():
                     state_model.hourly_min_wage = row[1]
                     state_model.yearly_living_cost = row[2]
                     state_model.save()
-    except:
+    except Exception as e: 
+        print(e)
         print("ERROR: Unable to populate data in database.")

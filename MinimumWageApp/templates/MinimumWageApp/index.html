@@ -14,7 +14,7 @@
     <br/>
     <form class="vertical-center" method="POST" action="/state-search/">
       {% csrf_token %}
-      {{ state_search_form.state_name.errors. }}
+      {{ state_search_form.state_name.errors }}
       <input id="{{ state_search_form.state_name.id_for_label }}" 
              name="{{ state_search_form.state_name.name }}" 
              class="form-control mr-sm-2" 
