@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.utils.html import escape
+
 from .forms import StateSearch
 from .models import StateData
 from .modules.convertStateCode import convert_two_letter_state_code
@@ -31,6 +32,8 @@ def redirect_to_state(request):
                 return render(request, 'MinimumWageApp/index.html', {'state_search_form': form})
                 
             return HttpResponseRedirect('/state/{0}'.format(state))
+        else:
+            print('Form is invalid.\n Form error:{0}'.format(form.errors.as_text))
 
     return HttpResponseRedirect('/')
 
@@ -47,4 +50,5 @@ def render_state_data(request, state_name):
         'hourly_min_wage': '${:,.2f}'.format(state_data.hourly_min_wage),
         'annual_family_living_wage': '${:,.2f}'.format(state_data.yearly_living_cost),
     }
-    return render(request, 'MinimumWageApp/state_data.html', {'state_data': template_variables})
+    state_search_form = StateSearch()
+    return render(request, 'MinimumWageApp/state_data.html', {'state_data': template_variables, 'state_search_form': state_search_form})
