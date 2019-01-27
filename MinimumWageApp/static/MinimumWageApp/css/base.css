@@ -1,5 +1,18 @@
 body {
-  background-color: #f7f7f7
+  background-color: #f7f7f7;
+}
+
+body footer {
+  color: white;
+  background-color: #040041;
+}
+
+footer li {
+  padding-top: 5px;
+}
+
+footer li p {
+  margin: 0;
 }
 
 h1 {
@@ -24,6 +37,7 @@ p {
   background-position: center;
   background-size: contain;
   position: relative;
+  padding-bottom: 10em;
 }
 
 .landing-page form {
@@ -44,6 +58,8 @@ p {
 .state-page {
   text-align: center;
   position: relative;
+  margin-top: 3em;
+  margin-bottom: 10em;
 }
 
 .vertical-center {
