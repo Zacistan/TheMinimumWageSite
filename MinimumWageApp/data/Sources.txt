@@ -5,4 +5,4 @@ Poverty thresholds:
 https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-poverty-thresholds.html
 
 Living wage:
-https://research.zippia.com/living-wage.html
+http://livingwage.mit.edu/

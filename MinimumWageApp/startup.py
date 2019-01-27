@@ -16,7 +16,7 @@ def start_up():
                     state_model = StateData()
                     state_model.state_name = row[0]
                     state_model.hourly_min_wage = row[1]
-                    state_model.yearly_living_cost = row[2]
+                    state_model.hourly_living_cost = row[2]
                     state_model.save()
     except Exception as e: 
         print(e)
